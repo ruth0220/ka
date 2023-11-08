@@ -33,11 +33,11 @@
             map.addLayer(backgroundLayer);
 
             map.attributionControl.addAttribution(
-                '<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29-v2_0.html">国土数値情報 - 学校データ</a>',
+                '<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29-v2_0.html">国土数値情報 - データ</a>',
             );
 
             // GeoJSONレイヤーを作成
-            fetch('./L01-21_13.geojson') // 群馬県の学校データのGeoJSONを非同期読み込み
+            fetch('./P11-22_27.geojson') // データのGeoJSONを非同期読み込み
                 .then((res) => res.json())
                 .then((json) => {
                     // GeoJSONレイヤーを作成
