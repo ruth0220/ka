@@ -45,6 +45,12 @@
                         .bindPopup((layer) => layer.feature.properties.P29_005) // ポップアップで学校名を表示
                         .addTo(map);
                 });
+
+            // ピン定義
+            const marker = L.marker([35.717, 139.457]); // ピン＝Markerを初期化
+            marker.bindPopup('津田塾大学'); // ポップアップを紐付け
+            map.addLayer(marker); // ピンを地図上に追加
+            
         </script>
     </body>
 </html>
